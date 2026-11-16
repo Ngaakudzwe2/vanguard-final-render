@@ -1,0 +1,383 @@
+{
+ "source": "https://vanguarddigital.co.zw/",
+ "captured_at": "2026-11-16",
+ "capture": {
+  "viewport_css": [
+   1440,
+   900
+  ],
+  "device_scale_factor": 2,
+  "page_css": [
+   1440,
+   1709
+  ],
+  "cookie_banner": "dismissed via 'Essential only'",
+  "animations": "frozen",
+  "hero_slide": "slide 1 of 7 (Amazon phone + trolley imagery)"
+ },
+ "plates": {
+  "fullpage_live": {
+   "file": "fullpage_live.png",
+   "note": "untouched live full-page screenshot (reference)"
+  },
+  "base_page": {
+   "file": "base_page.png",
+   "note": "live page with lifted elements hidden; they are re-composited as layers below"
+  }
+ },
+ "layers": {
+  "header_logo_slot": {
+   "box": {
+    "x": 118,
+    "y": 11,
+    "w": 101,
+    "h": 96
+   },
+   "replaced_by": "assets/vanguard_logo.jpg (official asset preferred over scraped logo)"
+  },
+  "hero": {
+   "file": "layers/hero_bg.png",
+   "box": {
+    "x": 0,
+    "y": 154,
+    "w": 1440,
+    "h": 640
+   },
+   "note": "hero imagery with text hidden; used for the CTA card"
+  },
+  "hero_headline": {
+   "box": {
+    "x": 112,
+    "y": 298.2,
+    "w": 501,
+    "h": 171.6,
+    "text": "Zimbabwe's Smartest Way to Shop Global"
+   },
+   "text": "Zimbabwe's Smartest Way to Shop Global",
+   "in_plate": "base_page"
+  },
+  "landed_price_line": {
+   "box": {
+    "x": 112,
+    "y": 489.8,
+    "w": 448,
+    "h": 84,
+    "text": "Start with Amazon, Takealot, Apple, or Samsung: see the full Zimbabwe landed price (freight and duties included), then pay securely via Smile&Pay."
+   },
+   "text": "Start with Amazon, Takealot, Apple, or Samsung: see the full Zimbabwe landed price (freight and duties included), then pay securely via Smile&Pay.",
+   "in_plate": "base_page"
+  },
+  "start_shopping_btn": {
+   "file": "layers/start_shopping_btn.png",
+   "box": {
+    "x": 112,
+    "y": 605.8,
+    "w": 148,
+    "h": 44,
+    "text": "Start shopping"
+   },
+   "text": "Start shopping"
+  },
+  "store_marquee_mask": {
+   "box": {
+    "x": 320,
+    "y": 823,
+    "w": 1008,
+    "h": 154,
+    "maskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 6%, rgb(0, 0, 0) 94%, rgba(0, 0, 0, 0))"
+   },
+   "fade_edge_pct": 6,
+   "animation": {
+    "anim": "platform-marquee",
+    "dur": "36s",
+    "timing": "linear",
+    "trackW": 3428
+   }
+  },
+  "store_tiles": [
+   {
+    "id": "tile_0",
+    "file": "layers/tile_0.png",
+    "name": "Amazon",
+    "aria_label": "Shop Amazon on Vanguard",
+    "status": "live",
+    "href": "/shop/amazon",
+    "box": {
+     "x": 329,
+     "y": 875.6,
+     "w": 99.6,
+     "h": 36
+    },
+    "track_offset_px": 9,
+    "visible_tagline_on_homepage": null
+   },
+   {
+    "id": "tile_1",
+    "file": "layers/tile_1.png",
+    "name": "SHEIN",
+    "aria_label": "Shop SHEIN on Vanguard",
+    "status": "live",
+    "href": "/shop/shein",
+    "box": {
+     "x": 502.6,
+     "y": 875.6,
+     "w": 99.2,
+     "h": 36
+    },
+    "track_offset_px": 182.58,
+    "visible_tagline_on_homepage": null
+   },
+   {
+    "id": "tile_2",
+    "file": "layers/tile_2.png",
+    "name": "Alibaba",
+    "aria_label": "Shop Alibaba on Vanguard",
+    "status": "live",
+    "href": "/shop/alibaba",
+    "box": {
+     "x": 675.8,
+     "y": 875.6,
+     "w": 223.4,
+     "h": 36
+    },
+    "track_offset_px": 355.75,
+    "visible_tagline_on_homepage": null
+   },
+   {
+    "id": "tile_3",
+    "file": "layers/tile_3.png",
+    "name": "1688",
+    "aria_label": "Shop 1688 on Vanguard",
+    "status": "live",
+    "href": "/shop/1688",
+    "box": {
+     "x": 973.2,
+     "y": 875.6,
+     "w": 151.8,
+     "h": 36
+    },
+    "track_offset_px": 653.16,
+    "visible_tagline_on_homepage": null
+   },
+   {
+    "id": "tile_4",
+    "file": "layers/tile_4.png",
+    "name": "takealot.com",
+    "aria_label": "Shop takealot.com on Vanguard",
+    "status": "live",
+    "href": "/shop/takealot",
+    "box": {
+     "x": 1199,
+     "y": 875.6,
+     "w": 153.5,
+     "h": 36
+    },
+    "track_offset_px": 879,
+    "visible_tagline_on_homepage": null
+   },
+   {
+    "id": "tile_5",
+    "file": "layers/tile_5.png",
+    "name": "Tech sourcing",
+    "aria_label": "Shop Tech sourcing on Vanguard",
+    "status": "live",
+    "href": "/shop/tech-sourcing",
+    "box": {
+     "x": 1426.5,
+     "y": 873.6,
+     "w": 90,
+     "h": 40
+    },
+    "track_offset_px": 1106.48,
+    "visible_tagline_on_homepage": null
+   },
+   {
+    "id": "tile_6",
+    "file": "layers/tile_6.png",
+    "name": "Apple",
+    "aria_label": "Shop Apple on Vanguard",
+    "status": "live",
+    "href": "/shop/apple",
+    "box": {
+     "x": 1590.5,
+     "y": 875.6,
+     "w": 44,
+     "h": 36
+    },
+    "track_offset_px": 1270.48,
+    "visible_tagline_on_homepage": null
+   },
+   {
+    "id": "tile_7",
+    "file": "layers/tile_7.png",
+    "name": "Samsung",
+    "aria_label": "Shop Samsung on Vanguard",
+    "status": "live",
+    "href": "/shop/samsung",
+    "box": {
+     "x": 1708.5,
+     "y": 873.6,
+     "w": 125.3,
+     "h": 40
+    },
+    "track_offset_px": 1388.48,
+    "visible_tagline_on_homepage": null
+   },
+   {
+    "id": "tile_8",
+    "file": "layers/tile_8.png",
+    "name": "HomeHaul",
+    "aria_label": "HomeHaul - Coming soon. Open waitlist.",
+    "status": "coming_soon_waitlist",
+    "href": null,
+    "box": {
+     "x": 1907.8,
+     "y": 849.6,
+     "w": 88,
+     "h": 88
+    },
+    "track_offset_px": 1587.81,
+    "visible_tagline_on_homepage": null
+   }
+  ],
+  "trending_section": {
+   "box": {
+    "x": 0,
+    "y": 1006,
+    "w": 1440,
+    "h": 377.3
+   }
+  },
+  "product_cards": [
+   {
+    "id": "card_0",
+    "file": "layers/card_0.png",
+    "name": "TQPONLY Crankshaft Reluctor Wheel",
+    "kind": "car part",
+    "box": {
+     "x": 80,
+     "y": 1154,
+     "w": 230,
+     "h": 169.3
+    },
+    "card_text": "TQPONLY Crankshaft Reluctor Wheel | For Chrysler Town & Country,Dodge Grand Caravan Nitro,Jeep Grand Cherokee Wrangler Liberty,Ram C/V 2.8CRD | Replaces 68027485AA 068027485AA $68.87 View Landed Price"
+   },
+   {
+    "id": "card_1",
+    "file": "layers/card_1.png",
+    "name": "Scosche Install Centric ICCR6BN",
+    "kind": "car audio install kit",
+    "box": {
+     "x": 326,
+     "y": 1154,
+     "w": 230,
+     "h": 169.3
+    },
+    "card_text": "Scosche Install Centric ICCR6BN Compatible with Select Chrysler/Dodge/Jeep 2007-14 Double DIN Complete Stereo Installation Solution for Installing an Aftermarket $59.68 View Landed Price"
+   },
+   {
+    "id": "card_2",
+    "file": "layers/card_2.png",
+    "name": "USB 3.0 to SATA Adapter Hard Drive Converter Cable",
+    "kind": "tech accessory",
+    "box": {
+     "x": 572,
+     "y": 1154,
+     "w": 230,
+     "h": 169.3
+    },
+    "card_text": "USB 3.0 to SATA Adapter Hard Drive Converter Cable for 2.5\" 3.5\" HDD SSD $38.84 View Landed Price"
+   },
+   {
+    "id": "card_3",
+    "file": "layers/card_3.png",
+    "name": "iPhone 18 Pro and iPhone 18 Pro Max",
+    "kind": "Apple device",
+    "box": {
+     "x": 818,
+     "y": 1154,
+     "w": 230,
+     "h": 169.3
+    },
+    "card_text": "iPhone 18 Pro and iPhone 18 Pro Max — iPhone 18 Pro Max 6.9-inch display, Silver, 256 GB $1610.63 View Landed Price"
+   },
+   {
+    "id": "card_4",
+    "file": "layers/card_4.png",
+    "name": "MacBook Pro — 14-inch, Space Black",
+    "kind": "MacBook Pro",
+    "box": {
+     "x": 1064,
+     "y": 1154,
+     "w": 230,
+     "h": 169.3
+    },
+    "card_text": "MacBook Pro — 14-inch, Space Black, Standard display, M5 Pro chip, 15‑core CPU, 16‑core GPU, 32GB, 1TB, 70W, U.S. English $3119.15 View Landed Price"
+   }
+  ],
+  "trust_section": {
+   "box": {
+    "x": 0,
+    "y": 1383.3,
+    "w": 1440,
+    "h": 257
+   }
+  },
+  "trust_cards": [
+   {
+    "id": "trust_0",
+    "file": "layers/trust_0.png",
+    "box": {
+     "x": 208,
+     "y": 1416.3,
+     "w": 330.7,
+     "h": 191
+    },
+    "text": "100% Secure Encrypted payments & buyer protection POWERED BY"
+   },
+   {
+    "id": "trust_1",
+    "file": "layers/trust_1.png",
+    "box": {
+     "x": 554.7,
+     "y": 1416.3,
+     "w": 330.7,
+     "h": 191
+    },
+    "text": "Fast & Reliable Tracked shipping from global hubs"
+   },
+   {
+    "id": "trust_2",
+    "file": "layers/trust_2.png",
+    "box": {
+     "x": 901.3,
+     "y": 1416.3,
+     "w": 330.7,
+     "h": 191
+    },
+    "text": "Local Support Zimbabwe-based customer care team"
+   }
+  ],
+  "powered_by_smile_pay": {
+   "x": 293.3,
+   "y": 1544.3,
+   "w": 160,
+   "h": 47,
+   "text": "POWERED BY"
+  },
+  "footer": {
+   "box": {
+    "x": 0,
+    "y": 1640.3,
+    "w": 1440,
+    "h": 69
+   }
+  }
+ },
+ "not_on_live_page": {
+  "affiliate_runner_network_section": true,
+  "affiliate_pill": "absent from homepage; only present inside the supplied dashboard asset",
+  "how_it_works_section": true,
+  "logo_tiles_x4": "no 4-logo tile strip in the live hero"
+ }
+}

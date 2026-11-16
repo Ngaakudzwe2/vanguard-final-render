@@ -1,0 +1,747 @@
+{
+ "version": 2,
+ "duration_s": 15.0,
+ "fps": 60,
+ "resolution": [
+  1440,
+  1152
+ ],
+ "continuous_shot": true,
+ "precedence": "live_page_wins",
+ "global": {
+  "floor": [
+   "#f9fbfb",
+   "#f2f3f6"
+  ],
+  "page_corner_radius_px": 24,
+  "cta_card_radius_px": 38,
+  "lift_range_px": [
+   20,
+   40
+  ],
+  "fov_deg": 30,
+  "font": "ui-sans-serif, system-ui, -apple-system, sans-serif",
+  "forbidden": [
+   "hard_cut",
+   "crossfade",
+   "sideways_swing",
+   "fake_zoom",
+   "neon",
+   "glow",
+   "invented_text",
+   "invented_prices"
+  ]
+ },
+ "camera": {
+  "model": "one continuous move; target x locked to page centre (no lateral / sideways motion); constant FOV (no fake zoom); monotone-cubic (PCHIP) interpolation for C1-smooth velocity",
+  "target_x_px": 720,
+  "keys": [
+   {
+    "t": 0.0,
+    "target_y": 430,
+    "dist": 2250,
+    "pitch_deg": 40
+   },
+   {
+    "t": 2.5,
+    "target_y": 560,
+    "dist": 2200,
+    "pitch_deg": 37
+   },
+   {
+    "t": 3.5,
+    "target_y": 640,
+    "dist": 2080,
+    "pitch_deg": 35
+   },
+   {
+    "t": 4.6,
+    "target_y": 770,
+    "dist": 1880,
+    "pitch_deg": 33
+   },
+   {
+    "t": 5.5,
+    "target_y": 850,
+    "dist": 1700,
+    "pitch_deg": 31
+   },
+   {
+    "t": 6.7,
+    "target_y": 905,
+    "dist": 1580,
+    "pitch_deg": 29
+   },
+   {
+    "t": 7.7,
+    "target_y": 990,
+    "dist": 1680,
+    "pitch_deg": 29
+   },
+   {
+    "t": 8.5,
+    "target_y": 1170,
+    "dist": 1980,
+    "pitch_deg": 28
+   },
+   {
+    "t": 9.8,
+    "target_y": 1300,
+    "dist": 2250,
+    "pitch_deg": 26
+   },
+   {
+    "t": 11.2,
+    "target_y": 1345,
+    "dist": 2420,
+    "pitch_deg": 24
+   },
+   {
+    "t": 12.5,
+    "target_y": 1330,
+    "dist": 2520,
+    "pitch_deg": 17
+   },
+   {
+    "t": 13.3,
+    "target_y": 880,
+    "dist": 3900,
+    "pitch_deg": 0
+   },
+   {
+    "t": 14.35,
+    "target_y": 474,
+    "dist": 2860,
+    "pitch_deg": 0
+   },
+   {
+    "t": 15.0,
+    "target_y": 474,
+    "dist": 2820,
+    "pitch_deg": 0
+   }
+  ]
+ },
+ "marquee": {
+  "layer": "store_tiles",
+  "note": "Live store row is a 36 s linear CSS marquee (track 3428 px, loop 1714 px). Real speed kept; phase chosen so Tech sourcing and HomeHaul are both inside the mask during their beat.",
+  "loop_px": 1714,
+  "speed_px_s": 47.611,
+  "offset_at_t0_px": 597
+ },
+ "beats": [
+  {
+   "id": "intro",
+   "t": [
+    0.0,
+    2.5
+   ],
+   "section": "Intro",
+   "camera": "Low cinematic start over real hero, begin gliding backwards",
+   "focus": [
+    {
+     "rect": "hero",
+     "weight": 1.0
+    },
+    {
+     "rect": "header_logo_slot",
+     "weight": 1.0
+    }
+   ],
+   "blur_max": 0.75,
+   "lifts": [],
+   "flags": [
+    "logo_tiles_x4 not found in layers.json (live hero has no 4-logo tile strip) - lift omitted, no substitute"
+   ],
+   "allowed_text": [
+    "Zimbabwe's Smartest Way to Shop Global"
+   ],
+   "overlay_text": [],
+   "notes": "No extra overlay text. Hero phone/trolley/platform imagery sharp, page blurred around it."
+  },
+  {
+   "id": "problem_1",
+   "t": [
+    2.5,
+    3.5
+   ],
+   "section": "Problem",
+   "camera": "Glide backwards down page toward store navigation",
+   "focus": [
+    {
+     "rect": "store_marquee_mask",
+     "weight": 0.9
+    }
+   ],
+   "blur_max": 0.7,
+   "lifts": [
+    {
+     "layer": "store_tiles_visible",
+     "dz_px": 25,
+     "t": [
+      2.6,
+      3.4
+     ],
+     "staggered": true,
+     "depth_variation": [
+      0.55,
+      1.0
+     ]
+    }
+   ],
+   "allowed_text": [],
+   "overlay_text": [],
+   "notes": "Friction beat 1: many real store marks at different depths."
+  },
+  {
+   "id": "problem_2",
+   "t": [
+    3.5,
+    4.6
+   ],
+   "section": "Problem",
+   "camera": "Continue glide; focus pulls",
+   "focus": [
+    {
+     "rect": "landed_price_line",
+     "weight": 1.0,
+     "ramp": [
+      3.15,
+      3.45
+     ]
+    }
+   ],
+   "soft_page_from": 3.0,
+   "blur_max": 1.0,
+   "lifts": [],
+   "allowed_text": [
+    "See the full Zimbabwe landed price (freight and duties included)"
+   ],
+   "overlay_text": [],
+   "live_page_check": "Line exists on live page inside the hero paragraph: 'see the full Zimbabwe landed price (freight and duties included)'. Shown as page text only (no overlay).",
+   "notes": "Friction beat 2: page stays in soft focus until the landed-price line comes sharp."
+  },
+  {
+   "id": "problem_3",
+   "t": [
+    4.6,
+    5.5
+   ],
+   "section": "Problem",
+   "camera": "Slow lateral-free 'searching' drift across platform tiles (no sideways swing)",
+   "focus": [
+    {
+     "rect": "store_marquee_mask",
+     "weight": 1.0
+    }
+   ],
+   "blur_max": 0.7,
+   "lifts": [
+    {
+     "layer": "store_tiles_visible",
+     "dz_px": 20,
+     "t": [
+      4.7,
+      5.4
+     ],
+     "staggered": true
+    }
+   ],
+   "allowed_text": [],
+   "overlay_text": [],
+   "notes": "Friction beat 3: camera looks like it is searching platforms. No bullets, stats or story."
+  },
+  {
+   "id": "use_platforms",
+   "t": [
+    5.5,
+    6.7
+   ],
+   "section": "Use case: 1 Choose platforms",
+   "camera": "Steady glide over live store section",
+   "focus": [
+    {
+     "rect": "store_marquee_mask",
+     "weight": 1.0
+    }
+   ],
+   "blur_max": 0.7,
+   "lifts": [
+    {
+     "layer": "store_tiles_live",
+     "dz_px": 30,
+     "t": [
+      5.6,
+      6.6
+     ],
+     "order": [
+      "Amazon",
+      "SHEIN",
+      "Alibaba",
+      "1688",
+      "takealot.com",
+      "Apple",
+      "Samsung"
+     ],
+     "only_if_inside_mask": true
+    }
+   ],
+   "allowed_text": [],
+   "overlay_text": [],
+   "notes": "Only tiles confirmed live in layers.json. The marquee shows ~5 tiles at a time, so only the live tiles inside the mask at that moment lift, in the listed order."
+  },
+  {
+   "id": "use_tech_homehaul",
+   "t": [
+    6.7,
+    7.7
+   ],
+   "section": "Use case: Tech Sourcing + HomeHaul purpose",
+   "camera": "Continue glide; focus passes Tech Sourcing tile then HomeHaul tile",
+   "focus": [
+    {
+     "rect": "store_marquee_mask",
+     "weight": 1.0
+    }
+   ],
+   "blur_max": 0.7,
+   "lifts": [
+    {
+     "layer": "tile_5",
+     "dz_px": 30,
+     "t": [
+      6.7,
+      7.2
+     ],
+     "hold_until": 7.95
+    },
+    {
+     "layer": "tile_8",
+     "dz_px": 30,
+     "t": [
+      7.2,
+      7.7
+     ],
+     "hold_until": 8.2
+    }
+   ],
+   "allowed_text": [
+    "For authorised resellers, traders and dealers. Devices sourced abroad from reputable suppliers, with concierge RFQ and landed quotes to Zimbabwe.",
+    "Independent; not affiliated.",
+    "Zimbabwean groceries, snacks and goods delivered to diaspora doors worldwide.",
+    "Coming soon · Waitlist"
+   ],
+   "overlay_text": [
+    {
+     "id": "tech_caption",
+     "anchor": "tile_5",
+     "t": [
+      6.75,
+      7.95
+     ],
+     "lines": [
+      "For authorised resellers, traders and dealers. Devices sourced abroad from reputable suppliers, with concierge RFQ and landed quotes to Zimbabwe."
+     ],
+     "note_line": "Independent; not affiliated."
+    },
+    {
+     "id": "homehaul_caption",
+     "anchor": "tile_8",
+     "t": [
+      7.25,
+      8.2
+     ],
+     "chip": "Coming soon · Waitlist",
+     "lines": [
+      "Zimbabwean groceries, snacks and goods delivered to diaspora doors worldwide."
+     ]
+    }
+   ],
+   "live_page_check": "Homepage tiles carry no visible tagline, so the brief purpose lines are used. Tech sourcing = live link (/shop/tech-sourcing) and its tile shows Apple/Samsung/Pixel/Dell/HP marks, so the independence note is shown. HomeHaul = button 'HomeHaul - Coming soon. Open waitlist.' (not a live store) -> status chip 'Coming soon · Waitlist' always visible with its caption.",
+   "notes": "Each purpose line is a small caption on the tile (~0.5 s lift-and-focus), not a large overlay."
+  },
+  {
+   "id": "use_landed_price",
+   "t": [
+    7.7,
+    8.5
+   ],
+   "section": "Use case: 2 See full landed price",
+   "camera": "Glide over Trending Now",
+   "focus": [
+    {
+     "rect": "trending_section",
+     "weight": 1.0
+    }
+   ],
+   "blur_max": 0.55,
+   "lifts": [
+    {
+     "layer": "product_cards_selected",
+     "dz_px": 28,
+     "t": [
+      7.8,
+      8.4
+     ],
+     "staggered": true,
+     "max_simultaneous": 3,
+     "order": [
+      "card_3",
+      "card_4",
+      "card_0",
+      "card_2",
+      "card_1"
+     ]
+    }
+   ],
+   "allowed_text": [
+    "real product names from page",
+    "View Landed Price"
+   ],
+   "overlay_text": [],
+   "notes": "The 5 real Trending Now cards visible on the live page (iPhone 18 Pro Max, MacBook Pro, TQPONLY car part, USB-SATA adapter, Scosche install kit). Prices are the live card prices, rendered from the captured card pixels only."
+  },
+  {
+   "id": "use_payment",
+   "t": [
+    8.5,
+    9.8
+   ],
+   "section": "Use case: 3 Pay securely",
+   "camera": "Steady glide; payment marks rise at depth around the page",
+   "focus": [
+    {
+     "rect": "trust_section",
+     "weight": 0.6
+    }
+   ],
+   "blur_max": 0.6,
+   "lifts": [
+    {
+     "layer": "smile_and_pay_logo",
+     "dz_px": 40,
+     "t": [
+      8.5,
+      9.1
+     ],
+     "hold_until": 9.9
+    },
+    {
+     "layer": "payment_logos",
+     "dz_px": 25,
+     "t": [
+      8.75,
+      9.8
+     ],
+     "order": [
+      "EcoCash",
+      "InnBucks",
+      "Omari",
+      "ZimSwitch",
+      "Visa",
+      "Mastercard",
+      "OneMoney"
+     ],
+     "staggered": true,
+     "hold_until": 9.95,
+     "stagger_s": 0.05,
+     "rise_s": 0.28
+    }
+   ],
+   "allowed_text": [
+    "Smile & Pay",
+    "by ZB Bank",
+    "Pay securely"
+   ],
+   "overlay_text": [
+    {
+     "id": "zb_attribution",
+     "anchor": "smile_and_pay_logo",
+     "text": "by ZB Bank"
+    }
+   ],
+   "notes": "Correct brand: Smile & Pay by ZB Bank (never 'SmartPay'). Logos only, each on a plain white chip, aspect preserved; no fake checkout form. No ZB logo supplied, so attribution is small text."
+  },
+  {
+   "id": "use_tracking",
+   "t": [
+    9.8,
+    11.2
+   ],
+   "section": "Use case: 4-6 Track, WhatsApp, Zimbabwe delivery",
+   "camera": "Steady glide; tracking layers rise from the floor beside the page",
+   "focus": [],
+   "blur_max": 0.7,
+   "lifts": [
+    {
+     "layer": "track_order_ui",
+     "dz_px": 40,
+     "t": [
+      9.8,
+      10.6
+     ],
+     "hold_until": 11.15
+    },
+    {
+     "layer": "whatsapp_phone_mockup",
+     "dz_px": 40,
+     "t": [
+      10.2,
+      11.2
+     ],
+     "hold_until": 11.3
+    }
+   ],
+   "allowed_text": [
+    "Track the shipment",
+    "Notify me on WhatsApp",
+    "text already inside the mockups"
+   ],
+   "overlay_text": [],
+   "notes": "Journey shown only by the attached assets (pixels untouched). Floating layers in the same scene, no cut to an app screen."
+  },
+  {
+   "id": "use_trust_affiliate",
+   "t": [
+    11.2,
+    12.5
+   ],
+   "section": "Use case: trust strip + affiliate",
+   "camera": "Glide over trust strip, then affiliate / Runner Network",
+   "focus": [
+    {
+     "rect": "trust_section",
+     "weight": 1.0
+    }
+   ],
+   "blur_max": 0.5,
+   "lifts": [
+    {
+     "layer": "trust_cards",
+     "dz_px": 20,
+     "t": [
+      11.2,
+      11.8
+     ],
+     "hold_until": 12.6
+    },
+    {
+     "layer": "runner_network_dashboard",
+     "dz_px": 35,
+     "t": [
+      11.7,
+      12.5
+     ],
+     "hold_until": 12.95
+    }
+   ],
+   "allowed_text": [
+    "100% Secure",
+    "Fast & Reliable",
+    "Local Support",
+    "affiliate pill text from page",
+    "text already inside the dashboard (personal data masked)"
+   ],
+   "overlay_text": [],
+   "live_page_check": "Live homepage has no affiliate / Runner Network section and no affiliate pill. No pill is invented; the only pill shown is the 'Partner affiliate · 60% of service fee' pill already inside the supplied dashboard asset. Dashboard floats beside the trust strip.",
+   "notes": "Dashboard is a floating depth layer only: no onboarding, no tab clicking, no invented stats. Greeting name, account name/email and personal referral URL are blurred."
+  },
+  {
+   "id": "cta_rise",
+   "t": [
+    12.5,
+    13.3
+   ],
+   "section": "CTA",
+   "camera": "Rise into centred overhead view of the real homepage",
+   "focus": [],
+   "blur_max": 0.0,
+   "lifts": [],
+   "allowed_text": [],
+   "overlay_text": [],
+   "notes": "Floating layers settle back to the page."
+  },
+  {
+   "id": "cta_card",
+   "t": [
+    13.3,
+    15.0
+   ],
+   "section": "CTA",
+   "camera": "Dive back into hero; land on final card",
+   "focus": [
+    {
+     "rect": "hero",
+     "weight": 1.0
+    }
+   ],
+   "blur_max": 0.0,
+   "haze": {
+    "t": [
+     13.3,
+     14.1
+    ],
+    "amount": 1.0
+   },
+   "hero_card": {
+    "t": [
+     13.25,
+     14.0
+    ],
+    "fade_s": 0.2,
+    "radius_px": 38,
+    "dz_px": 30
+   },
+   "lifts": [
+    {
+     "layer": "start_shopping_btn",
+     "dz_px": 12,
+     "t": [
+      14.15,
+      14.5
+     ],
+     "hold_until": 15.0
+    }
+   ],
+   "allowed_text": [
+    "Shop smarter. Live ahead.",
+    "See your full Zimbabwe landed price before you pay.",
+    "Start shopping",
+    "vanguarddigital.co.zw"
+   ],
+   "overlay_text": [
+    {
+     "id": "logo_badge_pill",
+     "t_in": 13.65,
+     "asset": "vanguard_logo"
+    },
+    {
+     "id": "cta_headline",
+     "t_in": 13.8,
+     "text": "Shop smarter. Live ahead."
+    },
+    {
+     "id": "cta_support",
+     "t_in": 13.95,
+     "text": "See your full Zimbabwe landed price before you pay."
+    },
+    {
+     "id": "cta_url",
+     "t_in": 14.4,
+     "text": "vanguarddigital.co.zw"
+    }
+   ],
+   "notes": "Hero becomes a 38 px rounded card with soft shadow; rest of page fades into studio haze. Real logo in a small white badge pill. Existing Start shopping button revealed. Hold final frame readable from 14.6 s."
+  }
+ ],
+ "floating_layers": {
+  "smile_and_pay_logo": {
+   "asset": "assets/smile_and_pay_trim.png",
+   "chip": [
+    330,
+    170
+   ],
+   "center": [
+    720,
+    1255
+   ],
+   "logo_h": 96
+  },
+  "payment_logos": {
+   "chip": [
+    140,
+    78
+   ],
+   "row_y": 1405,
+   "row_x": [
+    255,
+    1185
+   ],
+   "logo_h": 40,
+   "items": [
+    {
+     "name": "EcoCash",
+     "asset": "assets/ecocash_trim.png"
+    },
+    {
+     "name": "InnBucks",
+     "asset": "assets/innbucks_trim.png"
+    },
+    {
+     "name": "Omari",
+     "asset": "assets/omari_trim.png",
+     "logo_h": 54
+    },
+    {
+     "name": "ZimSwitch",
+     "asset": "assets/zimswitch_trim.png",
+     "logo_h": 48
+    },
+    {
+     "name": "Visa",
+     "asset": "assets/visa_trim.png",
+     "logo_h": 36
+    },
+    {
+     "name": "Mastercard",
+     "asset": "assets/mastercard_trim.png",
+     "logo_h": 58
+    },
+    {
+     "name": "OneMoney",
+     "asset": "assets/onemoney_trim.png",
+     "logo_h": 56
+    }
+   ]
+  },
+  "track_order_ui": {
+   "asset": "assets/track_order_card.png",
+   "size": [
+    720,
+    480
+   ],
+   "center": [
+    420,
+    1420
+   ],
+   "radius": 22
+  },
+  "whatsapp_phone_mockup": {
+   "asset": "assets/whatsapp_card.png",
+   "size": [
+    336,
+    554
+   ],
+   "center": [
+    1075,
+    1430
+   ],
+   "radius": 22
+  },
+  "runner_network_dashboard": {
+   "asset": "assets/dashboard_card.png",
+   "size": [
+    700,
+    394
+   ],
+   "center": [
+    720,
+    1190
+   ],
+   "radius": 22
+  },
+  "vanguard_logo": {
+   "asset": "assets/vanguard_logo.jpg"
+  }
+ },
+ "preview_stills_s": [
+  0.0,
+  3.5,
+  7.0,
+  9.2,
+  10.5,
+  12.0,
+  13.5,
+  15.0
+ ]
+}
